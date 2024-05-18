@@ -28,17 +28,19 @@
         h1, h2 {
             color: #1e90ff;
         }
-        .link-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 20px 0;
-            background-color: #1e90ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+        .paper-list {
+            list-style-type: none;
+            padding: 0;
         }
-        .link-button:hover {
-            background-color: #4169e1;
+        .paper-list li {
+            margin: 10px 0;
+        }
+        .paper-link {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .paper-link:hover {
+            text-decoration: underline;
         }
         footer {
             text-align: center;
@@ -48,6 +50,10 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        footer p {
+            margin: 0; /* Remove default margin */
+            font-size: 12px; /* Adjust font size */
         }
     </style>
 </head>
@@ -84,10 +90,14 @@
         <p>你可以通过以下方式联系我：</p>
         <p>Email: 15223347847@163.com</p>
     </section>
-
+    
     <section id="papers">
         <h2>工作论文</h2>
-        <a href="https://github.com/Leiwei286/leiwei/blob/working-papers/DIF%26inequality.pdf" class="link-button">获取我的工作论文</a>
+        <ul class="paper-list">
+            <li><a href="https://github.com/Leiwei286/leiwei/blob/working-papers/DIF%26inequality.pdf" class="paper-link">数字普惠金融对收入不平等的影响</a></li>
+            <li><a href="*" class="paper-link">在研</a></li>
+            <li><a href="*" class="paper-link">在研</a></li>
+        </ul>
     </section>
 </div>
 
