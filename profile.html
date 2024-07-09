@@ -57,6 +57,13 @@
         }
     </style>
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var abstracts = document.querySelectorAll(".abstract");
+            abstracts.forEach(function(abstract) {
+                abstract.style.display = "none";
+            });
+        });
+
         function toggleAbstract(id) {
             var abstract = document.getElementById(id);
             if (abstract.style.display === "none") {
