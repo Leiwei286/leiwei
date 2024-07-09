@@ -56,6 +56,16 @@
             font-size: 12px; /* Adjust font size */
         }
     </style>
+    <script>
+        function toggleAbstract(id) {
+            var abstract = document.getElementById(id);
+            if (abstract.style.display === "none") {
+                abstract.style.display = "block";
+            } else {
+                abstract.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -94,9 +104,29 @@
     <section id="papers">
         <h2>工作论文</h2>
         <ul class="paper-list">
-            <li><a href="https://github.com/Leiwei286/leiwei/blob/working-papers/DIF%26inequality.pdf" class="paper-link">数字普惠金融对收入不平等的影响.2024.独立作者</a></li>
-            <li><a href="*" class="paper-link">制度成本与企业新质生产力——基于跨境电商综试区的考察.2024.第一作者</a></li>
-            <li><a href="*" class="paper-link">在研</a></li>
+          <li>
+                <a onclick="toggleAbstract('abstract1')" class="paper-link">数字普惠金融对收入不平等的影响.2024.独立作者</a>
+                <div id="abstract1" class="abstract">
+                    2023年10月底，中央金融工作会议提出金融强国战略，指出要做好数字金融、普惠金融等五篇大文章。
+                    在此背景下，本文从国家大力发展的数字普惠金融出发，基于CHFS和CFPS的调查数据，使用固定效应模型，探究其对收入不平等的影响。
+                    研究发现：一、数字普惠金融可以显著改善收入不平等；
+                    二、在一线/新一线城市和东部地区，数字普惠金融改善收入不平等的作用并不显著，数字普惠金融表现出一定程度上的局限性；
+                    三、数字普惠金融通过“提高低收入家庭获得转移性收入概率”以及“提高金融可得性而大幅提高低收入家庭的收入，小幅提高中高收入家庭的收入”两条路径改善了收入不平等。
+                    因此，本文建议要继续发展数字普惠金融以及推进数字基础设施建设。同时，欠发达地区地方政府要采取对应措施，以便更好地利用数字普惠金融改善收入不平等。
+                </div>
+            </li>
+            <li>
+                <a onclick="toggleAbstract('abstract2')" class="paper-link">制度成本与企业新质生产力——基于跨境电商综试区的考察.2024.第一作者</a>
+                <div id="abstract2" class="abstract">
+                    本文使用2011-2020年中国A股上市公司数据，借助中国跨境电子商务综合试验区政策这一能够有效降低制度成本的外生冲击，创新性地采用多期双重差分模型首次在实证层面考察了制度成本与企业新质生产力的关系，规避了制度成本难以衡量的难题，主要发现包括：①制度成本的降低可以有效促进企业形成新质生产力。这一发现在经过控制更多维的固定效应、排除模型误设的可能、处理特殊样本、缓解内生性问题等一系列检验后依然成立。②制度成本通过改善要素配置效率的路径促进了企业新质生产力的形成；进一步将要素细分为资本、劳动及技术之后，本文观察到降低制度成本对三种要素的异质性影响，并发现短期内，提高技术配置效率是降低制度成本促进企业新质生产力形成的主要路径。③降低制度成本促使原本承受更高制度成本的企业形成了更多的新质生产力，特别反映出跨境电商综试区政策在降低制度成本方面的有效性。本文为如何看待制度成本与企业新质生产力的关系，如何进一步促进企业新质生产力的形成提供了实证证据和政策启示。
+                </div>
+            </li>
+            <li>
+                <a onclick="toggleAbstract('abstract3')" class="paper-link">在研</a>
+                <div id="abstract3" class="abstract">
+                    本文正在研究中，内容即将发布。
+                </div>
+            </li>
         </ul>
     </section>
 </div>
